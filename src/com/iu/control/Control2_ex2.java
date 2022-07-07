@@ -24,9 +24,8 @@ public class Control2_ex2 {
 		// num:2 ch:z 출력 b
 
 		//study edition
+		//home edition
 		
-		
-
 	}
 
 }
