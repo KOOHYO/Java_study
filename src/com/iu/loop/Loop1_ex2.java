@@ -54,8 +54,10 @@ public class Loop1_ex2 {
 		//	 로그인이 성공하면 그 즉시 종료
 		int yId=1234; // 회원가입시 입력한 ID
 		int yPw=5678; // 회원가입시 입력한 PW
+		boolean check=false;
 		
-		for(int count=0; count<5; count++) {
+		int count=0;
+		for(count=0; count<5; count++) {
 			System.out.println("아이디를 입력하세요");
 			int id=sc.nextInt();
 			System.out.println("비밀번호를 입력하세요");
@@ -63,6 +65,7 @@ public class Loop1_ex2 {
 			
 			if(id==yId && pw==yPw) {
 				System.out.println("로그인 했습니다");
+				check=!check;
 				count=1000;
 			}else {
 				System.out.println("아이디와 패스워드가 맞지 않습니다");
@@ -70,7 +73,21 @@ public class Loop1_ex2 {
 
 		}
 		
-		System.out.println("Finish");
+		//1. 로그인이 성공
+		//2. 로그인이 5번 전부 실패
+		
+		//if(check){
+		//	System.out.println("게임 시작");
+		//}else {
+		//	System.out.println("은행 방문");
+		//}
+		
+		
+		if(count==5) {
+			System.out.println("아이디와 비밀번호를 찾으세요");
+		}else {
+		System.out.println("프로그램을 시작합니다");
 		
 	}
+}
 }

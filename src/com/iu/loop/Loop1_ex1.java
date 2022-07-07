@@ -22,6 +22,7 @@ public class Loop1_ex1 {
 			System.out.println(i);
 			//여기에 i++;추가한다 
 		}
+		
 
 		//멍멍 출력
 		//출력하는 횟수를 입력 받아서 그 횟수만큼 출력
