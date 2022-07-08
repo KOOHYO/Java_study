@@ -17,7 +17,7 @@ public class Loop3 {
 				break;
 			default:
 				System.out.println("프로그램을 종료합니다");
-				break; //여기서 종료하려면 for 반복문을 false일때 가능함
+				break; //여기서 종료하려면 for 반복문의 조건이 false일때 가능함 왜냐하면 switch문은 break가 안먹음
 			
 			}
 			
