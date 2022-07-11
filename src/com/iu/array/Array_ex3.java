@@ -83,7 +83,7 @@ public class Array_ex3 {
 			}
 			
 			if(flag) {
-				
+				System.out.println("일치하는 학생 정보가 없습니다");
 			}
 
 			//4. 학생 정보 삭제
@@ -91,9 +91,12 @@ public class Array_ex3 {
 			//	 - 입력한 번호와 일치하는 학생의 정보를 삭제(배열을 한칸 삭제)
 			//	 - 일치하는 번호가 없으면 없는 학생이다 출력
 			System.out.println("4. 학생 정보 삭제");
+			System.out.println("삭제할 학생의 번호를 입력해 주세요");
+			int delete = sc.nextInt();
 			//5. 학생 정보 추가
 			//	 - 이름, 번호, 국어, 영어, 수학
 			System.out.println("5. 학생 정보 추가");
+			System.out.println("");
 			//6. 프로그램 종료
 			System.out.println("6. 프로그램 종료");
 			
