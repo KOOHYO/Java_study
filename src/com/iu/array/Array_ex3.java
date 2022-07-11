@@ -61,10 +61,11 @@ public class Array_ex3 {
 			//	 - 검색할 학생의 번호를 입력
 			//	 - 입력한 번호와 일치하는 학생의 모든 정보 출력
 			//	 - 일치하는 번호가 없으면 없는 학생이다 출력
-			System.out.println("3. 학생 정보 검색");
-			System.out.println();
-			
+			System.out.println("3. 학생 정보 검색");	
 			System.out.println("학생의 번호를 입력하세요");
+			int num2 = sc.nextInt();
+			
+
 			//4. 학생 정보 삭제
 			//	 - 삭제할 학생의 번호를 입력
 			//	 - 입력한 번호와 일치하는 학생의 정보를 삭제(배열을 한칸 삭제)
