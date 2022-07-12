@@ -92,7 +92,31 @@ public class Array_ex3 {
 			//	 - 일치하는 번호가 없으면 없는 학생이다 출력
 			System.out.println("4. 학생 정보 삭제");
 			System.out.println("삭제할 학생의 번호를 입력해 주세요");
-			int delete = sc.nextInt();
+			num = sc.nextInt();
+			boolean delete = true;
+			String [] studentInfocp = null;//이름
+			int [] studentCountcp = null;//번호
+			int [] studentKorscp = null;//국어
+			int [] studentEglscp = null;//영어
+			int [] studentMathcp = null;//수학
+			int [] totalscp = null;//총점
+			int [] totalccp = null;//평균
+			for(int i=0; i<totalStudent.length; i++) {
+				if(num == studentCount[i]) {
+					delete = true;
+				}
+			}
+			if(delete) {
+				for(int j=0; j<totalStudent.length; j++) {
+					studentInfocp = new String [totalStudent.length-1];//이름
+					studentCountcp = new int [totalStudent.length];//번호
+					studentKorscp = new int [totalStudent.length];//국어
+					studentEglscp = new int [totalStudent.length];//영어
+					studentMathcp = new int [totalStudent.length];//수학
+					totalscp = new int [totalStudent.length];//총점
+					totalccp = new int [totalStudent.length];
+				}
+			}
 			//5. 학생 정보 추가
 			//	 - 이름, 번호, 국어, 영어, 수학
 			System.out.println("5. 학생 정보 추가");
