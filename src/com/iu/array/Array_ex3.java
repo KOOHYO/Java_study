@@ -17,28 +17,33 @@ public class Array_ex3 {
 			System.out.println("1. 학생 정보 입력");
 			System.out.println("학생 수를 입력하세요");
 			int num = sc.nextInt();
-			String [] totalStudent = new String[num];
-			String [] studentInfo = new String[totalStudent.length];//이름
-			int [] studentCount = new int [totalStudent.length];//번호
-			int [] studentKors = new int [totalStudent.length];//국어
-			int [] studentEgls = new int [totalStudent.length];//영어
-			int [] studentMath = new int [totalStudent.length];//수학
-			int [] totals = new int [totalStudent.length];//총점
-			int [] totalc = new int [totalStudent.length];//평균
+			int [] totalStudent = null;
+			String [] studentInfo = null;//이름
+			int [] studentCount = null;//번호
+			int [] studentKors = null;//국어
+			int [] studentEgls = null;//영어
+			int [] studentMath = null;//수학
+			int [] totals = null;//총점
+			int [] totalc = null;//평균
+			
+			totalStudent = new int[num];
+			studentInfo = new String[totalStudent.length];//이름
+			studentCount = new int [totalStudent.length];//번호
+			studentKors = new int [totalStudent.length];//국어
+			studentEgls = new int [totalStudent.length];//영어
+			studentMath = new int [totalStudent.length];//수학
+			totals = new int [totalStudent.length];//총점
+			totalc = new int [totalStudent.length];//평균
 			
 			for(int i=0; i<totalStudent.length; i++) {
 				System.out.println(i+1+". 이름을 입력하세요");
 				studentInfo[i] = sc.next();
-				
 				System.out.println(i+1+". 번호를 입력하세요");
 				studentCount[i] = sc.nextInt();
-				
 				System.out.println(i+1+". 국어점수를 입력하세요");
 				studentKors[i] = sc.nextInt();
-				
 				System.out.println(i+1+". 영어점수를 입력하세요");
 				studentEgls[i] = sc.nextInt();
-				
 				System.out.println(i+1+". 수학점수를 입력하세요");
 				studentMath[i] = sc.nextInt();
 			}
@@ -104,17 +109,23 @@ public class Array_ex3 {
 			for(int i=0; i<totalStudent.length; i++) {
 				if(num == studentCount[i]) {
 					delete = true;
+					break;
 				}
 			}
 			if(delete) {
+				studentInfocp = new String [totalStudent.length-1];//이름
+				studentCountcp = new int [studentInfocp.length];//번호
+				studentKorscp = new int [studentInfocp.length];//국어
+				studentEglscp = new int [studentInfocp.length];//영어
+				studentMathcp = new int [studentInfocp.length];//수학
+				totalscp = new int [studentInfocp.length];//총점
+				totalccp = new int [studentInfocp.length];
+				int index = 0;
 				for(int j=0; j<totalStudent.length; j++) {
-					studentInfocp = new String [totalStudent.length-1];//이름
-					studentCountcp = new int [totalStudent.length];//번호
-					studentKorscp = new int [totalStudent.length];//국어
-					studentEglscp = new int [totalStudent.length];//영어
-					studentMathcp = new int [totalStudent.length];//수학
-					totalscp = new int [totalStudent.length];//총점
-					totalccp = new int [totalStudent.length];
+					if(j==index) {
+						continue;
+					}
+					
 				}
 			}
 			//5. 학생 정보 추가
