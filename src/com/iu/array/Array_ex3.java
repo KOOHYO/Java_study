@@ -125,8 +125,22 @@ public class Array_ex3 {
 					if(j==index) {
 						continue;
 					}
-					
+					studentInfocp[index]=studentInfo[j];
+					studentCountcp[index]=studentCount[j];
+					studentKorscp[index]=studentKors[j];
+					studentEglscp[index]=studentEgls[j];
+					studentMathcp[index]=studentMath[j];
+					totalscp[index]=totals[j];
+					totalccp[index]=totalc[j];
+					index++;
 				}
+				studentInfo=studentInfocp;
+				studentCount=studentCountcp;
+				studentKors=studentKorscp;
+				studentEgls=studentEglscp;
+				studentMath=studentMathcp;
+				totals=totalscp;
+				totalc=totalscp;
 			}
 			//5. 학생 정보 추가
 			//	 - 이름, 번호, 국어, 영어, 수학
