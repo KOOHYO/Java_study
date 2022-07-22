@@ -141,11 +141,21 @@ public class Array_ex3 {
 				studentMath=studentMathcp;
 				totals=totalscp;
 				totalc=totalscp;
+			}else {
+				System.out.println("일치하는 학생 정보 없음");
 			}
 			//5. 학생 정보 추가
 			//	 - 이름, 번호, 국어, 영어, 수학
 			System.out.println("5. 학생 정보 추가");
-			System.out.println("");
+			System.out.println("추가할 학생 정보를 입력해 주세요");
+			String [] studentInfocp = new String [totalStudent.length+1];
+			int [] studentCountcp = new int [studentInfocp.length];//번호
+			studentKorscp = new int [studentInfocp.length];//국어
+			studentEglscp = new int [studentInfocp.length];//영어
+			studentMathcp = new int [studentInfocp.length];//수학
+			totalscp = new int [studentInfocp.length];//총점
+			totalccp = new int [studentInfocp.length];
+			
 			//6. 프로그램 종료
 			System.out.println("6. 프로그램 종료");
 			
